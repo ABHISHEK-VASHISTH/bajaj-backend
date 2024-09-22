@@ -10,7 +10,6 @@ app.post('/bfhl', (req, res) => {
   let alphabets = [];
   let highestLowercaseAlphabet = null;
 
-  
   data.forEach((item) => {
     if (!isNaN(item)) numbers.push(item);
     else if (/^[a-zA-Z]+$/.test(item)) alphabets.push(item);
